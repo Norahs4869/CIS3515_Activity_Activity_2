@@ -18,7 +18,6 @@ class DisplayActivity : AppCompatActivity() {
                 lyricsDisplayTextView.text = getStringExtra(RESULT_KEY)
             }
         }
-
     }
 
     // TODO Step 3: Use returned value for lyricsDisplayTextView text size
