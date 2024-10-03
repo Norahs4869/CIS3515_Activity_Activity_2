@@ -15,7 +15,7 @@ class DisplayActivity : AppCompatActivity() {
     private var launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         if(it.resultCode == RESULT_OK){
             it.data?.apply{
-                lyricsDisplayTextView.text = getStringExtra(RESULT_KEY)
+                lyricsDisplayTextView.textSize = getIntExtra(RESULT_KEY, 22).toFloat()
             }
         }
     }
